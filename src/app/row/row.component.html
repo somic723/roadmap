@@ -1,0 +1,17 @@
+<div class="row">
+  <div class="label">
+    {{label}}
+  </div>
+  <div class="cards">
+
+    <div *ngFor="let card of cards" >
+
+      <app-card [card]="card" [minDueDate]="minDueDate"></app-card>
+    </div>
+
+
+  </div>
+</div>
+
+<!-- [ngStyle]="{'height':calculateRowHeight(cards)+'px'}"> -->
+
